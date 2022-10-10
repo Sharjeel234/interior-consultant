@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Crimson Pro', serif;
+}
+
+body {
+    background: #181719;
+    height: 776px;
+}
+
+.navbar {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.navbar.active {
+    display: flex;
+}
+
+.navbar ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navbar ul li a {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #fff;
+    margin: 10px 0;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.marker {
+    position: absolute;
+    top: 0;
+    height: 4px;
+    margin-top: 20px;
+    transition: 0.5s;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.toggle {
+    position: absolute;
+    left: 420px;
+    top: 21px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.toggle span {
+    display: none;
+}
+
+.toggle span#open,
+.toggle.active span#close {
+    display: block;
+}
+
+.toggle span#close,
+.toggle.active span#open {
+    display: none;
+}
+
+main.active {
+    display: none;
+}
+
+.brand {
+    position: absolute;
+    width: 103px;
+    height: 31px;
+    left: 12px;
+    top: 19px;
+    border: 1px solid #fff;
+}
+
+.brand-name {
+    position: relative;
+    left: 8px;
+    top: 6px;
+    font-family: 'Crimson Pro', serif;
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.title {
+    position: absolute;
+    width: 274px;
+    height: 46px;
+    left: 12px;
+    top: 88px;
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 46px;
+    color: #fff;
+}
+
+.text {
+    position: absolute;
+    width: 250px;
+    height: 85px;
+    left: 12px;
+    top: 159px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+}
+
+.cta {
+    position: absolute;
+    width: 119px;
+    height: 17px;
+    left: 12px;
+    top: 269px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.cta span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.p1 {
+    position: absolute;
+    width: 410px;
+    height: 264.32px;
+    left: 12px;
+    top: 323px;
+}
+
+.card {
+    position: absolute;
+    width: 300px;
+    height: 138px;
+    left: 90px;
+    top: 495px;
+    background: #181719;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cardImage {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    left: 15px;
+    top: 15px;
+    border-radius: 50%;
+}
+
+.content {
+    position: absolute;
+    width: 143px;
+    height: 30px;
+    left: 65px;
+    top: 17px;
+}
+
+.cardname {
+    position: absolute;
+    left: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #fff;
+}
+
+.cardtext {
+    position: absolute;
+    left: 5px;
+    top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    color: #828282;
+}
+
+.cardtxt {
+    position: absolute;
+    width: 210px;
+    height: 45px;
+    left: 15px;
+    top: 75px;
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #fff;
+}
+
+.attribution {
+    display: inline-block;
+    position: absolute;
+    top: 137%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    width: 352px;
+    color: #4F4F4F;
+    text-align: center;
+}
+
+.attribution a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #F7542E;
+}
+@media(min-width:600px)
+{
+    body 
+    {
+        height: auto;
+    }
+    .navbar
+    {
+        position: absolute;
+        left: 800px;
+        top: 42px;
+        display: flex;
+        align-items: flex-start;
+    }
+    .navbar ul
+    {
+        flex-direction: row;
+    }
+    .navbar ul li a 
+    {
+        margin: 0;
+        padding: 0 30px;
+    }
+    .marker
+    {
+        left: 0;
+        width: 0;
+    }
+    .toggle
+    {
+        display: none;
+    }
+    .brand
+    {
+        left: 77px;
+        top: 42px;
+    }
+    .title
+    {
+        width: 365px;
+        height: 61px;
+        top: 381px;
+        left: 77px;
+        font-size: 48px;
+        line-height: 61px;
+    }
+    .text
+    {
+        width: 410px;
+        height: 145px;
+        left: 77px;
+        top: 482px;
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .cta
+    {
+        width: 200px;
+        left: 77px;
+        top: 675px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .p1
+    {
+        width: 737px;
+        height: 555px;
+        left: 600px;
+        top: 221px;
+    }
+    .card
+    {
+        width: 410px;
+        height: 189px;
+        top: 650px;
+        left: 890px;
+    }
+    .cardname
+    {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .cardtext
+    {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .cardtxt
+    {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .attribution
+    {
+        font-size: 18px;
+    }
+}
